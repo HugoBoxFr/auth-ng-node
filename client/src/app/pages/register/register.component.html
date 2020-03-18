@@ -1,0 +1,26 @@
+<div class="container" id="register">
+    <div class="row">
+      <div class="col-xl-6 col-md-8 offset-xl-3 offset-md-2">
+        <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onSubmit()" #myForm="ngForm">
+                <h2>Créez votre espace</h2>
+
+                <div class="form-group">
+                  <input formControlName="email" type="email" class="form-control" id="inputEmail" placeholder="{{ placeholderMail }}" [ngClass]="ifMailError ? 'first' : 'second'" required>
+                </div>
+
+                <div class="form-group">
+                  <input formControlName="password" type="password" class="form-control" id="inputPassword" placeholder="Mot de passe" required>
+                </div>
+
+                <div class="form-group">
+                  <input formControlName="password2" type="password" class="form-control" id="inputPassword2" placeholder="{{ placeholderPwd }}" [ngClass]="ifPwdError ? 'first' : 'second'" required>
+                </div>
+
+                <div class="btn-form">
+                  <button [disabled]="!registerForm.valid" class="btn btn-warning">Créer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

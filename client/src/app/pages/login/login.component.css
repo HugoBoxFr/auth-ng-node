@@ -1,0 +1,64 @@
+#auth {
+    padding-top: 100px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-form button{
+    color: white;
+}
+
+.other {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other p {
+    color: white;
+}
+
+.other p, .other a, .sign p, .sign a {
+    margin-bottom: 0;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-form p {
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: red;
+    text-align: right;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767.98px) { 
+    .sign {
+        display: block;
+    }
+}

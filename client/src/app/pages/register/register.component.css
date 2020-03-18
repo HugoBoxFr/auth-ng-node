@@ -1,0 +1,38 @@
+#register {
+    padding-top: 100px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-form p {
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: red;
+}
+
+.btn-form button{
+    color: white;
+}
+
+.first::placeholder {
+    color: red;
+}
+
+.second::placeholder {
+    color: grey;
+}
