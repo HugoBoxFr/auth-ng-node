@@ -12,7 +12,5 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 );
 
-INSERT INTO user (mail, password, role) VALUES 
-('init', 'init', 'init');
-
+/* commande à faire après creation de son admin */
 UPDATE user SET role = 'admin' WHERE id=1;
